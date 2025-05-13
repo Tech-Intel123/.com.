@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<title>Tech-Intel</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+ <!-- This is the header section -->
+  <header>
+  <img src="logo.jpg" alt="TECH INTEL LOGO" class="logo">
+  <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+  <nav id="navMenu">
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#portfolio">Portfolio</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+<script>
+  const hamburger = document.querySelector('.hamburger');
+  const nav = document.querySelector('nav');
+
+  hamburger.addEventListener('click', () => {
+    nav.classList.toggle('show');
+  });
+</script>
+
+
+<!-- home -->
+<section class="home-section" id="home">
+  <div class="container">
+    <div class="home-content">
+      <h1><span>Tech Intel</span>Agency</h1>
+      <p>We craft stunning, high-performing websites.</p>
+      <a href="#contact" class="btn">Get Started</a>
+    </div>
+    <div class="home-image">
+      <img src="logo.jpg" alt="Agency Logo" />
+    </div>
+  </div>
+</section>
+
+<div class="deco"></div>
+
+<!-- about us -->
+   <section class="about-section" id="about">
+      <div class="container">
+        <h1>About <span>Us</span></h1>
+        <p class="typing-text">
+          We are a passionate team of web developers and including in other IT services, modern, and creative services that help brands grow digitally.
+        </p>
+        <div class="about-cards">
+          <div class="card">
+            <h2>Our Mission</h2>
+            <p>Deliver clean, responsive, and high-performance websites to help businesses thrive online.</p>
+          </div>
+          <div class="card">
+            <h2>Why Choose Us</h2>
+            <p>We combine creativity with modern tech to build unique web experiences tailored to your goals.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <script>
+    const hamburger = document.querySelector(".hamburger");
+    const nav = document.querySelector("nav");
+    hamburger.addEventListener("click", () => {
+      nav.classList.toggle("show");
+    });
+  </script>
+
+<div class="deco2"></div>
+<!-- portfolio -->
+ <section class="portfolio-section" id="portfolio">
+  <div class="container">
+    <h1>My <span>Portfolio</span></h1>
+    <div class="portfolio-grid">
+      <div class="portfolio-item">
+        <img src="image1.jpg" alt="Cafe Project">
+        <h3>Construction Website</h3>
+      </div>
+      <div class="portfolio-item">
+        <img src="image2.jpg" alt="Clinic Project">
+        <h3>travel Website</h3>
+      </div>
+      <div class="portfolio-item">
+        <img src="image3.jpg" alt="Travel Project">
+        <h3>clinic Website</h3>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="deco3"></div>
+
+<section class="services-section" id="services">
+  <h1>Our <span>Services</span></h1>
+  <div class="services-grid">
+    <div class="service-card"><i class="fas fa-code"></i><h2>Web Development</h2></div>
+    <div class="service-card"><i class="fas fa-shield-alt"></i><h2>Cybersecurity</h2></div>
+    <div class="service-card"><i class="fas fa-bullhorn"></i><h2>SMMA</h2></div>
+    <div class="service-card"><i class="fas fa-pen-nib"></i><h2>Content Creation</h2></div>
+    <div class="service-card"><i class="fas fa-server"></i><h2>Hosting</h2></div>
+    <div class="service-card"><i class="fas fa-globe"></i><h2>Domain Buying</h2></div>
+    <div class="service-card"><i class="fas fa-robot"></i><h2>AI Development</h2></div>
+    <div class="service-card"><i class="fas fa-comments"></i><h2>Chatbot Deployment</h2></div>
+  </div>
+</section>
+
+<footer class="footer" id="contact">
+    <div class="footer-container">
+        <!-- Footer Logo -->
+        <div class="footer-logo">
+            <img src="logo.jpg" alt="Tech Intel Logo" height="60" width="60">
+            <h3>Tech-Intel</h3>
+            <p>Build it , Grow it</p>
+        </div>
+
+        <!-- Contact Info -->
+        <div class="footer-links">
+          <h4>Contact Us</h4>
+              <ul>
+                <li>
+                 <i class="fas fa-phone-alt"></i> 
+                 <a href="tel:+8920585405">8920585405</a>|
+                 <a href="tel:+9540569737">9540569737</a>
+               </li>
+               <li>
+                 <i class="fas fa-envelope"></i> 
+                 <a href="mailto:inteltech080@gmail.com">inteltech080@gmail.com</a>
+               </li>
+             </ul>
+        </div>
+       <!-- Social Media -->
+       <div class="footer-social">
+          <h4>Follow Us</h4>
+          <a href="https://www.instagram.com/tech_intel_agency/?next=%2F" class="social-icon" target="_blank">
+             <i class="fab fa-instagram"></i>
+          </a>
+       </div>
+
+
+    <div class="footer-bottom">
+        <p>&copy; 2025 TECH INTEL All Rights Reserved.</p>
+    </div>
+</footer>
+
+</body>
+</html>
